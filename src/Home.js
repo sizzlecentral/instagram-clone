@@ -1,8 +1,27 @@
 import React from 'react';
 
-const Home = () => (
-  <div>
+const post = {
+  image: 'https://unsplash.it/500',
+  title: "Amazing photo",
+  author: "Bob",
+  body: "No filter!",
+  comments: [
+    "First!",
+    "Great post!",
+    "hire him!"
+  ]
+}
 
+const Home = () => (
+
+  <div>
+    <h4>{post.author}</h4>
+    <img src={post.image} alt=''/>
+    <p>{post.body}</p>
+    <hr/>
+    <p>{post.comments[0]}</p>
+    <p>{post.comments[1]}</p>
+    <p>{post.comments[2]}</p>
   </div>
 )
 

@@ -11,18 +11,6 @@ import Activity from './Activity.js';
 import Profile from './Profile.js';
 import './App.css';
 
-const post = {
-  image: 'http://api.giphy.com/v1/gifs/search?q=instagram&api_key=c6b5b3635f374dcea88defbc15a45d79&limit=1',
-  title: "Amazing photo",
-  author: "Bob",
-  body: "No filter!",
-  comments: [
-    "First!",
-    "Great post!",
-    "hire him!"
-  ]
-}
-
 const App = () => (
   <Router>
     <div>
@@ -36,13 +24,7 @@ const App = () => (
 
       <hr/>
 
-      <Route path="/" component={
-        () => (<Home image={post.image}
-                  title={post.title}
-                  Author={post.author}
-                  body={post.body}
-                  comments={post.comments} />
-        )}/>
+      <Route path="/" component={Home}/>
       <Route exact path="/search" component={Search}/>
       <Route exact path="/explore" component={Explore}/>
       <Route exact path="/activity" component={Activity}/>
