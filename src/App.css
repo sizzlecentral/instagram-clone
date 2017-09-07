@@ -37,3 +37,8 @@
 #post-card img {
   max-width: 100%;
 }
+
+#comment-list {
+  list-style-type: none;
+  margin-left: none;
+}
