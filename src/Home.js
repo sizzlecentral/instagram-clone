@@ -1,6 +1,8 @@
 import React from 'react';
 import CommentList from './CommentList';
 
+let comments = []
+
 const post = {
   image: 'https://unsplash.it/500',
   title: "Amazing photo",
@@ -18,7 +20,7 @@ const Home = () => (
       <p><strong>{post.author}</strong> {post.body}</p>
       <hr/>
       <div id="comment-list">
-
+        <CommentList commentList={comments} />
       </div>
     </div>
 

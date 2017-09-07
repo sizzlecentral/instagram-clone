@@ -27,11 +27,11 @@ const App = () => (
 
       <hr/>
 
-      <Route path="/" component={Home}/>
-      <Route exact path="/search" component={Search}/>
-      <Route exact path="/explore" component={Explore}/>
-      <Route exact path="/activity" component={Activity}/>
-      <Route exact path="/profile" component={Profile}/>
+      <Route exact path="/" component={Home}/>
+      <Route path="/search" component={Search}/>
+      <Route path="/explore" component={Explore}/>
+      <Route path="/activity" component={Activity}/>
+      <Route path="/profile" component={Profile}/>
     </div>
   </Router>
 )
