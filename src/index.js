@@ -6,11 +6,7 @@ import CommentList from './CommentList';
 import registerServiceWorker from './registerServiceWorker';
 
 
-let comments = [
-  "First!",
-  "Great post!",
-  "hire him!"
-]
+let comments = []
 
 ReactDOM.render(
   <App />,

@@ -38,9 +38,7 @@ class CommentList extends Component {
 
     return (
       <div>
-        <ul>
           {userComments}
-        </ul>
         <form>
           <input type="text"
            placeholder="Add a comment"
