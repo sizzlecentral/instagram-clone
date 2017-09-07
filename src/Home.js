@@ -14,14 +14,18 @@ const post = {
 
 const Home = () => (
 
-  <div>
-    <h4>{post.author}</h4>
-    <img src={post.image} alt=''/>
-    <p>{post.body}</p>
-    <hr/>
-    <p>{post.comments[0]}</p>
-    <p>{post.comments[1]}</p>
-    <p>{post.comments[2]}</p>
+  <div id="body">
+
+    <div id="post-card">
+      <h4>{post.author}</h4>
+      <img src={post.image} alt=''/>
+      <p><strong>{post.author}</strong> {post.body}</p>
+      <hr/>
+      <p>{post.comments[0]}</p>
+      <p>{post.comments[1]}</p>
+      <p>{post.comments[2]}</p>
+    </div>
+
   </div>
 )
 

@@ -13,3 +13,27 @@
 .App-intro {
   font-size: large;
 }
+
+#body {
+  margin: auto;
+  width: 500px;
+}
+
+#nav {
+  text-align: center;
+}
+
+#nav li {
+  padding: 1rem;
+  display: inline-block;
+}
+
+#post-card {
+  background-color: #EEEEEE;
+  padding: 1rem;
+  margin: 2rem 0;
+}
+
+#post-card img {
+  max-width: 100%;
+}
